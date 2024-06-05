@@ -1,0 +1,624 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: "spartan";
+    color: #313745; /* color de las letras */
+    font-weight: 400;
+    background: linear-gradient(135deg, #5a3e36, #916f57, #c19a6b); /* Fondo degradado similar al cuero */
+    
+}
+
+a
+{
+    display: inline-block;
+}
+
+section
+{
+    position: relative;
+}
+
+.cabecera
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:white;  /*aqui es la barra de navegacion*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.menu a {
+    color: #333333; /*letras de la barra de navegacion*/
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Transición para un cambio suave */
+   
+}
+
+.menu a:hover {
+    color: #ffffff; /*color del fondo al pasar el mouse*/
+    background-color: #313745; /*color al pasar el mouse*/
+    border-radius: 5px; /* Bordes redondeados para un efecto visual adicional */
+    
+}
+.iconos.btn  /* no se que hace esto*/
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    justify-content: center;
+    background-color:rgb(248, 246, 247);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.cabecera .container
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    justify-content: space-between;
+}
+
+
+
+.cabecera .link-logo
+{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cabecera .link-logo .logo
+{
+    width: 80px;
+    height: auto;
+}
+
+.menu
+{
+    margin-left: auto; /* Mueve la barra de navegación hacia la derecha */
+}
+
+
+.menu .a
+{
+    margin-left: auto;
+    margin-right: 20px;
+    color: rgb(89, 12, 85);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    white-space: 5px;
+}
+
+.cabecera .hamb
+{
+    color: rgb(89, 12, 85);
+    font-size: 40px;
+    display: none;
+}
+#favoritos .container-full {
+    background: linear-gradient(135deg, #5a3e36, #916f57, #c19a6b);
+    padding: 60px;
+    text-align: center;
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.container
+{
+    width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container-full
+{
+    width: 100%;
+    padding: 0 15px;
+    /* color:white; /*aqui esta el blahbñlahblah de favorito* */
+}
+
+
+.fila
+{
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fila.fila-centrada
+{
+    justify-content: center;
+    font-size: 20px;
+}
+
+.columna
+{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.columna-100
+{
+    width: 100%;
+}
+
+.columna-50
+{
+    width: 50%;
+}
+
+.columna-33
+{
+    width: 33.33%;
+}
+
+.columna-25
+{
+    width: 25%;
+}
+
+.orden
+{
+    order: 2;
+}
+
+.sin-padding
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.contenedor-cuadrado
+{
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color:rgb(93, 67, 44);
+    cursor: pointer;
+}
+
+.contenedor-cuadrado.cont-rect
+{
+    padding-bottom: 56.25%;
+}
+
+.contenedor-cuadrado img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    /*opacity: 0.8;
+    filter: grayscale(1);*/
+}
+
+.contenedor-cuadrado .contenido-cuadrado
+{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding-right: 30px;
+    padding-left: 30px;
+    top: -100%;
+    color: #fff;
+}
+
+.contenedor-cuadrado .contenido-cuadrado h2
+{
+    margin-top: 0;
+}
+
+.seccion
+{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: linear-gradient(135deg, #4e3b31, #8b5e3c, #d2b48c);
+    height: 100vh;
+    margin: 0;
+}
+
+.centrar-texto
+{
+    text-align: center;
+    font-size: 30px;
+}
+
+.inclinar--texto
+{
+    font-style: italic;
+}
+
+.justificar-texto
+{
+    text-align: justify;
+}
+
+.video-fondo
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 1;
+    filter: grayscale(1);
+    opacity: 0.5;
+}
+
+.importante
+{
+    font-style: italic;
+}
+
+.titulos
+{
+    margin-top: 0;
+    color: #dfe9ff;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+    /*text-shadow: 20px 17px 5px #DA70D6;*/ /*este es el sombreado de los titulos*/
+}
+
+.margen-arriba
+{
+    margin-top: 40px;
+}
+
+.btn
+{
+    background-color: #87CEEB; /*color principal boton pagar*/
+    border: white;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.btn:hover {
+    background-color: #6495ED; /*hover del boton pagar*/
+}
+
+.btn-circulo
+{
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 100%;
+    border-width: 2px;
+    border-style: solid;
+    text-decoration: none;
+}
+
+.btn-circulo.borde-blanco
+{
+    color: #fff;
+    border-color: #fff;
+}
+
+.btn.boton-transparente:hover{
+    color: #313745; /*color de las letras  al pasar el mouse*/
+    background-color: white; /*color al pasar el mouse*/
+    border-radius: 4px; /* Bordes redondeados para un efecto visual adicional */
+}
+.btn.boton-transparente
+{
+    background-color: #313745; /*color boton productos, mismo color de la pagina de cuero*/
+    border: black;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.btn.boton-morado
+{
+    border: color#891285;
+    background-color: #fec5fe;
+    color: #350634;
+}
+
+#banner
+{
+    background-color: #000;
+    position: relative;
+}
+
+#banner .banner-home
+{
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 0.9;
+    
+}
+
+#banner .container
+{
+    position: absolute;
+    top: 35%;
+    left: 0;
+    right: 0;
+}
+
+#banner .container h1
+{
+    font-size: 70px;
+    color: #fff;
+    margin: 0;
+
+    /*color: transparent;
+    -webkit-text-stroke: 2px #000; */
+
+/* text-shadow: 
+    0 0 #000,
+    -1px 0 #000,
+    1px 0 #000,
+    1px 1px #000,
+    -1px -1px #000,
+    -1px 1px #000,
+    1px -1px #000,
+    0 -1px #000,
+    0 1px #000;*/
+}
+
+#banner .container p
+{
+    margin: 0;
+    text-align: justify;
+    font-family: Prata;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: white;
+    font-weight: bold;
+    
+}
+#favoritos h2,
+#favoritos p {
+    color: #dfe9ff; /* Color de texto blanco */
+    font-family: 'spartan'; /* Fuente moderna *
+}
+#Productos
+{
+/*background-image: url("../img/mjerbolsos.jpg");*/
+    /* background-color: black; */
+    background-image: url("../img/textura.jpg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+#Productos .titulos /*creo que este se repite con .titulos*/
+{
+    color: white;
+    text-shadow: 20px 17px 5px rgba(255, 255, 255, 0,5);
+}
+
+
+
+#favoritos ul
+{
+    margin-top: 20px; /* Añadir espacio sobre la lista */
+}
+#favoritos ul li {
+    
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #f0f0f0; /* Color de texto ligeramente más claro */
+    }
+
+#favoritos a {
+    color: rgb(148, 160, 174); /* Cambiar el color del enlace */
+}
+
+
+#favoritos a:hover {
+    text-decoration: underline; /* Subrayar el enlace al pasar el cursor */
+}
+#servicios
+{
+
+}
+
+#servicios .contenedor-serv
+{
+    text-align: center;
+    background: #f8f9fa;
+    padding: 30px;
+    height: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+#servicios .contenedor-serv:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+
+#servicios .contenedor-serv i{
+
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #313745;
+}
+#servicios .contenedor-serv h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #313745;
+}
+#servicios .contenedor-serv p {
+    font-size: 16px;
+    color: #313745;
+}
+#servicios .contenedor-serv .btn-modern {
+    margin-top: 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+#servicios .contenedor-serv .btn-modern:hover {
+    background-color: #0056b3;
+}
+.btn.btn-primary{
+    background-color: #18222c;
+}
+.btn.btn-primary:hover{
+    background-color: #0056b3;
+}
+
+.slider {
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+#testimonio
+{
+    position: relative;
+    background-color: #DA70D6;
+    color: #fff;
+    line-height: 1.5;
+}
+
+#testimonio p
+{
+    margin-bottom: 0;
+    font-size: 25px;
+}
+
+#testimonio .trama-video
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #592557 5%, rgba(93, 67, 44,0.5) 50%);
+}
+
+#testimonio .container
+{
+    z-index: 3;
+    position: relative;
+}
+
+/* Estilos para el footer */
+
+footer {
+    background-color: #333;
+    color: #ec7855;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 200px;
+    height: 200px;
+}
+/*.footer-sucursales { 
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}*/
+/*.footer-sucursales h4 {
+    margin-bottom: 10px;
+}*/
+.footer-sucursales h3, .footer-sucursales h4 {
+    margin: 0;
+    padding: 10px 0;
+}
+/*.footer-sucursales ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-sucursales li {
+    margin-bottom: 5px;
+}*/
+.footer-sucursales ul li {
+    margin: 5px 0;
+}
+
+/* Estilos para el pie de página de derechos de autor 
+.copyright {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+}
+/*@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+    }
+
+    to {
+        opacity: 1;
+        scale: 100%;
+    }
+}
+
+img {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 50%;
+    animation-fill-mode: both;
+}*/
+
+
