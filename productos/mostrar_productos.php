@@ -73,7 +73,7 @@ $productos = obtenerProductos($conexion);
                     <img id="imagenGrande" src="" alt="Imagen Grande" class="img-fluid">
                 </div>
                 <div class="modal-footer">
-                    <a id="compraEnlace" href="../carritocompra.php" class="btn btn-primary">Comprar</a>
+                    <a id="compraEnlace" href="../comprar2.html" class="btn btn-primary">Comprar</a>
                 </div>
             </div>
         </div>
