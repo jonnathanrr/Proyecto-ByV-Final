@@ -32,7 +32,7 @@ if (isset($_SESSION['usuario'])) {
         
         <div class="contenedor__todo">
             <!-- Formulario de redirección -->
-            <form action="http://localhost/proyectoByV2/index.html" method="post">
+            <form action="http://localhost/Bella_y_Vale_Actualizado/index.html" method="post">
                 <button type="submit">Ir a la página principal</button>
             </form>
             <div class="caja__trasera">
